@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/adlynakram-dev-portfolio/static/css/main.18bfe84f.css",
-    "main.js": "/adlynakram-dev-portfolio/static/js/main.90a1352e.js",
+    "main.js": "/adlynakram-dev-portfolio/static/js/main.bb3baf7b.js",
     "static/js/453.50719ee5.chunk.js": "/adlynakram-dev-portfolio/static/js/453.50719ee5.chunk.js",
     "static/media/banner-bg.png": "/adlynakram-dev-portfolio/static/media/banner-bg.9c1ed14cfcc2b66c4ec9.png",
     "static/media/color-sharp.png": "/adlynakram-dev-portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/adlynakram-dev-portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
-    "static/media/header-img.svg": "/adlynakram-dev-portfolio/static/media/header-img.84bf93eb20488a753440bf83d27db7bb.svg",
+    "static/media/header-img.svg": "/adlynakram-dev-portfolio/static/media/header-img.4e10e9bce388874e16fe78c8d55889ac.svg",
     "static/media/CentraNo2-Bold.ttf": "/adlynakram-dev-portfolio/static/media/CentraNo2-Bold.2faff7f7d3fc92a2fcd9.ttf",
     "static/media/CentraNo2-Medium.ttf": "/adlynakram-dev-portfolio/static/media/CentraNo2-Medium.f94be5b326d78bb32b95.ttf",
     "static/media/CentraNo2-Book.ttf": "/adlynakram-dev-portfolio/static/media/CentraNo2-Book.2b143fa4b734a3584043.ttf",
@@ -29,11 +29,11 @@
     "static/media/arrow1.svg": "/adlynakram-dev-portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "/adlynakram-dev-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.18bfe84f.css.map": "/adlynakram-dev-portfolio/static/css/main.18bfe84f.css.map",
-    "main.90a1352e.js.map": "/adlynakram-dev-portfolio/static/js/main.90a1352e.js.map",
+    "main.bb3baf7b.js.map": "/adlynakram-dev-portfolio/static/js/main.bb3baf7b.js.map",
     "453.50719ee5.chunk.js.map": "/adlynakram-dev-portfolio/static/js/453.50719ee5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.18bfe84f.css",
-    "static/js/main.90a1352e.js"
+    "static/js/main.bb3baf7b.js"
   ]
 }
