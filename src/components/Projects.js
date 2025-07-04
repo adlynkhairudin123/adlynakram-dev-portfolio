@@ -10,37 +10,23 @@ import TrackVisibility from 'react-on-screen';
 export const Projects = () => {
 
   const projects = [
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-  ];
+  {
+    title: "Insurance Solution",
+  description: "Involved in the development and maintenance of multi-platform insurance solutions as part of the Southeast Asia Regional Development Center, which centralizes systems and services for the region in Kuala Lumpur. Specifically supported the Philippines Operational Enterprise (OE), focusing on mobile application enhancements, and UI/UX enhancements.",
+    imgUrl: projImg1,
+  },
+  {
+    title: "ZTE IoT Innovation Challenge 2022",
+    description: "Designed and developed an end-to-end IoT system for the ZTE IoT Innovation Challenge 2022. Integrated sensors, microcontrollers, and cloud platforms for real-time data collection and monitoring. Built automated workflows and dashboards, focusing on hardware-software integration and real-time device communication.",
+    imgUrl: projImg2,
+  },
+  {
+    title: "Industry-Linked Project",
+    description: "Final year industry-linked capstone project focused on the design and deployment of an IoT-based system. Developed hardware sensing and cloud communication using Arduino, ESP devices, and Firebase for real-time data monitoring. Project combined embedded system design, IoT protocols, and mobile interfacing to solve practical industry challenges.",
+    imgUrl: projImg3,
+  }
+];
+
 
   return (
     <section className="project" id="projects">
@@ -49,50 +35,67 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <Tab.Container id="projects-tabs" defaultActiveKey="first">
-                  <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                    <Nav.Item>
-                      <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                      <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                    </Nav.Item>
-                  </Nav>
-                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
-                    <Tab.Pane eventKey="first">
-                      <Row>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
-                            )
-                          })
-                        }
-                      </Row>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                    <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
-                  </Tab.Content>
-                </Tab.Container>
-              </div>}
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  <h2>Projects</h2>
+                  <p>Here are some of the projects I've worked on, each showcasing different technical areas from mobile development to IoT and embedded system integration.</p>
+                  <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                    <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
+                      <Nav.Item>
+                        <Nav.Link eventKey="first">Insurance Solution</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="second">ZTE IoT Challenge</Nav.Link>
+                      </Nav.Item>
+                      <Nav.Item>
+                        <Nav.Link eventKey="third">Industry Project</Nav.Link>
+                      </Nav.Item>
+                    </Nav>
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      <Tab.Pane eventKey="first">
+                        <Row className="justify-content-center">
+                          <Col xs={12} md={6} lg={10} className="d-flex justify-content-center">
+                            <ProjectCard
+                              key={0}
+                              {...projects[0]}
+                            />
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row className="justify-content-center">
+                          <Col xs={12} md={6} lg={10} className="d-flex justify-content-center">
+                            <ProjectCard
+                              key={1}
+                              {...projects[1]}
+                            />
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="third">
+                        <Row className="justify-content-center">
+                          <Col xs={12} md={6} lg={10} className="d-flex justify-content-center">
+                            <ProjectCard
+                              key={2}
+                              {...projects[2]}
+                            />
+                          </Col>
+                        </Row>
+                      </Tab.Pane>
+                    </Tab.Content>
+                  </Tab.Container>
+                </div>}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="Background Decoration" />
     </section>
   )
 }
+
+//  projects.map((project, index) => {
+                          // return (
+                          //   <ProjectCard
+                          //     key={index}
+                          //     {...project}
+                          //     />

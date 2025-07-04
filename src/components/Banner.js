@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+  const toRotate = ["Mobile Developer", "IoT Enthusiast", "Deep Learning Explorer", "Embedded Systems Developer"];
   const period = 2000;
 
   useEffect(() => {
@@ -55,9 +55,11 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                  <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>{`👋Adlyn Khairudin's here!`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>I graduated from Universiti Putra Malaysia (UPM) with a degree in Computer and Communication Systems Engineering. <br></br> My academic and project experience has shaped me into a tech enthusiast driven by creativity and a passion for real-world problem solving.</p>
+                  <span className="tagline">Adlyn's Tech Space</span>
+                  <h1>{`Hello, I'm Adlyn`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Mobile Developer", "UI/UX Explorer", "Tech Storyteller" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>A Software Engineer based in MY, currently building mobile solutions in the insurance industry using <strong>Ionic Angular</strong> at <strong>Accenture Southeast Asia</strong>.
+                    <br /><br />
+                    Graduated from Universiti Putra Malaysia with a B.Eng. in Computer & Communication Systems, equipped with diverse experience in <strong>Mobile Development, IoT Systems, and Deep Learning</strong>. Driven by a passion for solving real-world problems through creativity, clean design, and purposeful technology.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
                 </div>}
             </TrackVisibility>

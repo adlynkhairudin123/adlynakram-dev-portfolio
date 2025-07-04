@@ -308,7 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .skill-bx {
   background: #151515;
   border-radius: 64px;
-  text-align: center;
+  text-align: left;
   padding: 60px 50px;
   margin-top: -60px;
 }
@@ -324,9 +324,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 14px 0 75px 0;
 }
 .skill-slider {
-  width: 80%;
+  width: 53%;
   margin: 0 auto;
   position: relative;
+}
+.skill-slider .item {
+  text-align: center;
 }
 .skill-slider .item img {
   width: 50%;

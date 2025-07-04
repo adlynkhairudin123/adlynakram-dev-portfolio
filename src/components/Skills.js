@@ -35,42 +35,36 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>
-                🚀 What I’ve Done:
-                <br></br>
-                Led and contributed to impactful projects in Artificial Intelligence, Deep Learning, and IoT, including my Final Year Project where I applied deep learning for forensic dental identification using radiographic images.
-                <br></br>
-                Developed an IoT-based environmental monitoring system during the ZTE IoT Innovation Challenge, where we creatively combined sensors to overcome hardware limitations—earning us the First Runner-Up award.
-                <br></br>
-                Gained professional experience at MARii, working in IT support, device troubleshooting, cybersecurity policy, and backend development using Firebase.
-                <br></br>
-                🔧 My Skillset Includes:
-                💻 Python, C++, Java, XML
-                📱 Android Studio, Firebase
-                🌐 AI/ML frameworks (TensorFlow, PyTorch), IoT systems, REST APIs
-                🛠️ Tools like GNS3, Wireshark, and Arduino hardware platforms
-                <br></br>
-                🌍 What I’m Passionate About:
-                Bringing together innovative technologies with purpose—especially in areas like AI for technologies that make everyday lives better, smart environments, and education tech. I’m especially drawn to projects aligned with Sustainable Development Goals (SDGs) that drive social and environmental impact.
-                <br></br>
-                🤝 Let’s Connect!<br></br>
-                If you’re working on something meaningful or just want to chat about tech, AI, or collaboration opportunities—I'm just a message away.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+              <p>               
+                🔧 <strong>Core Skills:</strong><br />
+                • Mobile: Ionic Angular, Firebase, Gradle<br />
+                • AI & IoT: Python, TensorFlow, Node-Red, MQTT, Arduino<br />
+                • Tools: GNS3, Wireshark, ServiceNow, JIRA<br />
+                • Processes: REST API Integration, Deployment, Agile, SDLC<br /><br />
+
+                🌍 <strong>Passion:</strong><br />
+                Building purposeful tech that combines <strong>AI, IoT, and mobile solutions</strong> with real-world impact, especially in smart environments and social innovation.<br /><br />
+
+                🤝 <strong>Let’s Connect!</strong><br />
+                Always open to <strong>collaborations, learning, and meaningful tech conversations</strong>.
+              </p>
+
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <h5>Mobile Development</h5>
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <h5>IoT Systems</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h5>Artificial Intelligence</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <h5>Embedded Systems</h5>
                 </div>
               </Carousel>
             </div>
