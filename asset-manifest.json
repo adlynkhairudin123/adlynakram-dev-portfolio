@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/adlynakram-dev-portfolio/static/css/main.4ebe23f0.css",
-    "main.js": "/adlynakram-dev-portfolio/static/js/main.79e0f5ed.js",
+    "main.js": "/adlynakram-dev-portfolio/static/js/main.3d86c078.js",
     "static/js/453.50719ee5.chunk.js": "/adlynakram-dev-portfolio/static/js/453.50719ee5.chunk.js",
     "static/media/project-img3.png": "/adlynakram-dev-portfolio/static/media/project-img3.428f8e7571c674b3769e.png",
     "static/media/banner-bg.png": "/adlynakram-dev-portfolio/static/media/banner-bg.9c1ed14cfcc2b66c4ec9.png",
@@ -29,11 +29,11 @@
     "static/media/arrow1.svg": "/adlynakram-dev-portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
     "static/media/nav-icon2.svg": "/adlynakram-dev-portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.4ebe23f0.css.map": "/adlynakram-dev-portfolio/static/css/main.4ebe23f0.css.map",
-    "main.79e0f5ed.js.map": "/adlynakram-dev-portfolio/static/js/main.79e0f5ed.js.map",
+    "main.3d86c078.js.map": "/adlynakram-dev-portfolio/static/js/main.3d86c078.js.map",
     "453.50719ee5.chunk.js.map": "/adlynakram-dev-portfolio/static/js/453.50719ee5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4ebe23f0.css",
-    "static/js/main.79e0f5ed.js"
+    "static/js/main.3d86c078.js"
   ]
 }
