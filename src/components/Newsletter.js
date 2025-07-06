@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
+import { decomConfig } from "../services/DecomService"; // adjust the path as needed
 
 export const Newsletter = ({ status, message, onValidated }) => {
   const [email, setEmail] = useState('');
@@ -19,6 +20,11 @@ export const Newsletter = ({ status, message, onValidated }) => {
 
   const clearFields = () => {
     setEmail('');
+  }
+
+   // 👉 If decom is set to false, hide the newsletter
+  if (!decomConfig.newsletterEnabled) {
+    return null;
   }
 
   return (

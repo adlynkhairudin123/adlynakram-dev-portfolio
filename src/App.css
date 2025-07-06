@@ -549,7 +549,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.newsletter-bx {
+.About-bx {
+  background: #FFFFFF;
+  border-radius: 50px;
+  color: #121212;
+  padding: 85px 125px;
+  /* margin-bottom: 0px;
+  margin-top: 0px; */
+  margin: 0 !important;
+}
+.About-bx h3 {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2em;
+}
+/* .newsletter-bx {
   background: #FFFFFF;
   border-radius: 55px;
   color: #121212;
@@ -561,7 +575,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-weight: 700;
   letter-spacing: 0.5px;
   line-height: 1.2em;
-}
+} */
 .new-email-bx {
   background: #fff;
   padding: 5px;

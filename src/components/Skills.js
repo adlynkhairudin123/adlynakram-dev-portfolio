@@ -35,20 +35,7 @@ export const Skills = () => {
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>               
-                🔧 <strong>Core Skills:</strong><br />
-                • Mobile: Ionic Angular, Firebase, Gradle<br />
-                • AI & IoT: Python, TensorFlow, Node-Red, MQTT, Arduino<br />
-                • Tools: GNS3, Wireshark, ServiceNow, JIRA<br />
-                • Processes: REST API Integration, Deployment, Agile, SDLC<br /><br />
-
-                🌍 <strong>Passion:</strong><br />
-                Building purposeful tech that combines <strong>AI, IoT, and mobile solutions</strong> with real-world impact, especially in smart environments and social innovation.<br /><br />
-
-                🤝 <strong>Let’s Connect!</strong><br />
-                Always open to <strong>collaborations, learning, and meaningful tech conversations</strong>.
-              </p>
-
+              <br />
               <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                 <div className="item">
                   <img src={meter1} alt="Image" />
@@ -67,6 +54,20 @@ export const Skills = () => {
                   <h5>Embedded Systems</h5>
                 </div>
               </Carousel>
+              <br />
+              <p>               
+                🔧 <strong>Core Skills:</strong><br />
+                • Mobile: Typescript, Javascript, html, scss, css, Firebase, Gradle<br />
+                • AI & IoT: Python, TensorFlow, Node-Red, MQTT, Arduino<br />
+                • Tools: Git CLI, GNS3, Wireshark, ServiceNow, JIRA<br />
+                • Processes: REST API Integration, Deployment, Agile, SDLC<br /><br />
+
+                🌍 <strong>Passion:</strong><br />
+                Building purposeful tech that combines <strong>AI, IoT, and mobile solutions</strong> with real-world impact, especially in smart environments and social innovation.<br /><br />
+
+                🤝 <strong>Let’s Connect!</strong><br />
+                Always open to <strong>collaborations, learning, and conversation about tech ideas</strong>.
+              </p>
             </div>
           </div>
         </div>
