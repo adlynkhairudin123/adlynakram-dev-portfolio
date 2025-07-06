@@ -23,47 +23,61 @@ export const Contact = () => {
       })
   }
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    // Simple validation
-    const { firstName, lastName, email, phone, message } = formDetails;
-    if (!firstName || !lastName || !email || !phone || !message) {
-      setStatus({ success: false, message: "Please fill in all the fields." });
-      return;
-    }
-  
-    // Optional: Email format check
-    const emailRegex = /\S+@\S+\.\S+/;
-    if (!emailRegex.test(email)) {
-      setStatus({ success: false, message: "Please enter a valid email." });
-      return;
-    }
-  
-    setButtonText("Sending...");
-    try {
-      let response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-      });
-  
-      setButtonText("Send");
-      let result = await response.json();
-      setFormDetails(formInitialDetails);
-  
-      if (result.code === 200) {
+  const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs.sendForm('portfolio_ToConnect', 'template_y35uhad', e.target, 'FKyhwKNI3g-zkDho0')
+    .then((result) => {
+        console.log(result.text);
         setStatus({ success: true, message: "Message sent successfully!" });
-      } else {
+        setFormDetails(formInitialDetails);
+    }, (error) => {
+        console.log(error.text);
         setStatus({ success: false, message: "Something went wrong. Try again later." });
-      }
-    } catch (err) {
-      setStatus({ success: false, message: "Network error. Try again later." });
-      setButtonText("Send");
-    }
-  };
+    });
+};
+
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  
+  //   // Simple validation
+  //   const { firstName, lastName, email, phone, message } = formDetails;
+  //   if (!firstName || !lastName || !email || !phone || !message) {
+  //     setStatus({ success: false, message: "Please fill in all the fields." });
+  //     return;
+  //   }
+  
+  //   // Optional: Email format check
+  //   const emailRegex = /\S+@\S+\.\S+/;
+  //   if (!emailRegex.test(email)) {
+  //     setStatus({ success: false, message: "Please enter a valid email." });
+  //     return;
+  //   }
+  
+  //   setButtonText("Sending...");
+  //   try {
+  //     let response = await fetch("http://localhost:5000/contact", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json;charset=utf-8",
+  //       },
+  //       body: JSON.stringify(formDetails),
+  //     });
+  
+  //     setButtonText("Send");
+  //     let result = await response.json();
+  //     setFormDetails(formInitialDetails);
+  
+  //     if (result.code === 200) {
+  //       setStatus({ success: true, message: "Message sent successfully!" });
+  //     } else {
+  //       setStatus({ success: false, message: "Something went wrong. Try again later." });
+  //     }
+  //   } catch (err) {
+  //     setStatus({ success: false, message: "Network error. Try again later." });
+  //     setButtonText("Send");
+  //   }
+  // };
   
 
   return (
