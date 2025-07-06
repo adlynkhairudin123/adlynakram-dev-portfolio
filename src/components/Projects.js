@@ -22,7 +22,7 @@ export const Projects = () => {
   },
   {
     title: "Industry-Linked Project",
-    description: "Final year industry-linked capstone project focused on the design and deployment of an IoT-based system. Developed hardware sensing and cloud communication using Arduino, ESP devices, and Firebase for real-time data monitoring. Project combined embedded system design, IoT protocols, and mobile interfacing to solve practical industry challenges.",
+    description: "Designed and developed an AI-powered forensic dental identification system as part of a final year project. The solution provides reliable second opinions and improves forensic odontology reporting through the application of deep learning.",
     imgUrl: projImg3,
   }
 ];
@@ -37,7 +37,7 @@ export const Projects = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
-                  <p>Here are some of the projects I've worked on, each showcasing different technical areas from mobile development to IoT and embedded system integration.</p>
+                  <p>Here are some of the projects I've worked on, each showcasing different technical areas from mobile development to IoT and embedded system integration and AI in health industry.</p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                       <Nav.Item>
@@ -47,7 +47,7 @@ export const Projects = () => {
                         <Nav.Link eventKey="second">ZTE IoT Challenge</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">Industry Project</Nav.Link>
+                        <Nav.Link eventKey="third">Industry-based AI Project</Nav.Link>
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
